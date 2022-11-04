@@ -3,6 +3,6 @@ from config import config
 from routes.user import user
 
 
-app = FastAPI()
+app = FastAPI(title="FASTAPI + MYSQL 💚")
 
 app.include_router(user)
