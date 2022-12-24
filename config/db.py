@@ -10,7 +10,7 @@ DB_HOST = config.get("DB_HOST", "localhost")
 
 DB_URL = f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 
-# Create connection
+# Create a connection
 engine = create_engine(DB_URL)
 meta = MetaData()
 conn = engine.connect()
